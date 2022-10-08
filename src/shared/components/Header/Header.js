@@ -1,9 +1,9 @@
 import { useChangeBackground } from '../../../controller/useChangeBackground';
-import { Icon } from '../../assets/Components';
 import dropDownIcon from '../../assets/Icon/dropDownIcon.svg';
 import leftIcon from '../../assets/Icon/leftIcon.svg';
 import ptbaStock from '../../assets/Icon/ptbaStock.svg';
 import rightIcon from '../../assets/Icon/rightIcon.svg';
+import { Icon } from '../Components';
 import Navbar from '../Navbar/Navbar';
 import {
   Devider,
