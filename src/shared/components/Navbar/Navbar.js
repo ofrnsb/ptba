@@ -1,9 +1,9 @@
-import { Nav_Container } from './navbarStyle';
+import { NavContainer } from './navbarStyle';
 import ptbaIcon from '../../assets/Icon/ptba-logo.svg';
 
 const Navbar = () => {
   return (
-    <Nav_Container>
+    <NavContainer>
       <section>
         <div>
           <img src={ptbaIcon} alt="PTBA LOGO" />
@@ -25,15 +25,15 @@ const Navbar = () => {
         <div>
           <ul>
             <li>BERANDA</li>
-            <li>TENTANG</li>
-            <li>BISNIS KAMI</li>
-            <li>TATA KELOLA</li>
-            <li>ESG</li>
-            <li>HUBUNGAN INVESTOR</li>
+            <li>TENTANG •</li>
+            <li>BISNIS KAMI •</li>
+            <li>TATA KELOLA •</li>
+            <li>ESG •</li>
+            <li>HUBUNGAN INVESTOR •</li>
           </ul>
         </div>
       </section>
-    </Nav_Container>
+    </NavContainer>
   );
 };
 

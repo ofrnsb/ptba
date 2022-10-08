@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 
-export const Nav_Container = styled.nav`
-  position: absolute;
-  top: 0;
+export const NavContainer = styled.nav`
   width: clamp(450px, 100%, 1980px);
   min-height: fit-content;
   display: flex;
@@ -26,8 +24,7 @@ export const Nav_Container = styled.nav`
         gap: 5px;
 
         font-style: normal;
-        font-weight: 700;
-        font-size: 20.0682px;
+        font-size: 1rem;
         line-height: 30px;
         color: #828282;
       }
@@ -50,9 +47,8 @@ export const Nav_Container = styled.nav`
         gap: 36.37px;
         li {
           min-width: fit-content;
-          font-style: italic;
-          font-weight: 400;
-          font-size: 20.0682px;
+          font-style: normal;
+          font-size: 1rem;
           line-height: 30px;
           text-transform: uppercase;
 
@@ -68,9 +64,8 @@ export const Nav_Container = styled.nav`
         li {
           min-width: fit-content;
           font-style: normal;
-          font-weight: 400;
-          font-size: 21px;
-          line-height: 32px;
+          font-size: 1rem;
+          line-height: 30px;
           text-transform: uppercase;
 
           color: #ffffff;
