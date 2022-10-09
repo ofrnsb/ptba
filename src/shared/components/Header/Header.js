@@ -3,18 +3,13 @@ import dropDownIcon from '../../assets/Icon/dropDownIcon.svg';
 import leftIcon from '../../assets/Icon/leftIcon.svg';
 import ptbaStock from '../../assets/Icon/ptbaStock.svg';
 import rightIcon from '../../assets/Icon/rightIcon.svg';
-import { Icon } from '../Components';
+import { Icon, MainContainer } from '../Components';
 import Navbar from '../Navbar/Navbar';
-import {
-  Devider,
-  HeaderStockWrapper,
-  HeaderTitleWrapper,
-  MainContainer,
-} from './headerStyle';
+import { Devider, HeaderStockWrapper, HeaderTitleWrapper } from './headerStyle';
 
 const Header = () => {
   const { getLeft, getRight, backGround } = useChangeBackground();
-  console.log(backGround);
+
   return (
     <MainContainer backgroundtype={backGround}>
       <Navbar />

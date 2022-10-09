@@ -1,28 +1,4 @@
 import styled from 'styled-components';
-import backgroundImage from '../../assets/Icon/header-background.svg';
-import backgroundImage2 from '../../assets/Icon/header-background2.svg';
-import backgroundImage3 from '../../assets/Icon/header-background3.svg';
-
-export const MainContainer = styled.div`
-  width: clamp(450px, 100%, 1980px);
-  min-height: 100vh;
-
-  background: url(${(props) =>
-      props.backgroundtype === 0
-        ? backgroundImage
-        : props.backgroundtype === 1
-        ? backgroundImage2
-        : props.backgroundtype === 2
-        ? backgroundImage3
-        : null})
-    center no-repeat;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  transition: 0.3s ease-in-out;
-`;
 
 export const HeaderTitleWrapper = styled.div`
   display: flex;
