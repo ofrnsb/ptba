@@ -7,6 +7,9 @@ export const HeaderTitleWrapper = styled.div`
   align-items: center;
   gap: 20px;
 
+  position: relative;
+  top: 70px;
+
   width: 75%;
 
   .Header-Title {

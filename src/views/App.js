@@ -1,3 +1,4 @@
+import AboutUs from '../shared/components/AboutUs/AboutUs';
 import Footer from '../shared/components/Footer/Footer';
 import Header from '../shared/components/Header/Header';
 import MainContent from '../shared/components/MainContent/MainContent';
@@ -11,6 +12,7 @@ function App() {
       <Footer />
       <News />
       <Pengumuman />
+      <AboutUs />
     </div>
   );
 }

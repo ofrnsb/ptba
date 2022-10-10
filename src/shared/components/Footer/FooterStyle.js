@@ -17,17 +17,23 @@ export const ContentWrapper = styled.div`
 
   display: flex;
   align-items: center;
-  gap: 3rem;
+  gap: 1em;
 
   position: relative;
-  top: 86px;
+  padding-top: 86px;
 
   .Content {
     display: flex;
     flex: 1;
+    gap: 1rem;
+
+    flex-wrap: wrap;
+    position: relative;
 
     &__Left {
       height: 220px;
+      width: 30%;
+      flex: 1 0 0;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -64,12 +70,21 @@ export const ContentWrapper = styled.div`
     }
 
     &__Center {
-      width: 410px;
+      width: 30%;
       display: flex;
-      flex: 1 0 0;
+      flex: 1.5 0 0;
+
+      .Icon {
+        position: relative;
+        background-color: white;
+        width: 100%;
+        height: 100%;
+      }
     }
 
     &__Right {
+      width: 30%;
+
       flex: 1 0 0;
       display: flex;
       flex-direction: column;
@@ -77,7 +92,6 @@ export const ContentWrapper = styled.div`
       justify-content: center;
 
       position: relative;
-      top: -80px;
 
       p {
         font-style: normal;
@@ -85,6 +99,7 @@ export const ContentWrapper = styled.div`
         font-size: 18px;
         line-height: 150%;
         color: #5a5a5a;
+        text-align: justify;
       }
 
       button {
@@ -109,10 +124,12 @@ export const ContentWrapper = styled.div`
     }
   }
 
-  img {
+  .circleIcon {
     position: absolute;
 
-    left: -10%;
-    bottom: -16%;
+    z-index: 100;
+
+    left: -12%;
+    bottom: -100px;
   }
 `;

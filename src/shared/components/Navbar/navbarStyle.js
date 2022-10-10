@@ -6,9 +6,15 @@ export const NavContainer = styled.nav`
   display: flex;
   justify-content: space-around;
 
+  position: fixed;
+
+  z-index: 1000;
+
+  background-color: ${(props) => props.scrollPosition >= 648 && '#C0C0C0'};
+
   section:nth-child(1) {
-    padding-top: 20px;
-    padding-top: auto;
+    padding-top: 30px;
+
     div {
       display: flex;
       justify-content: center;
@@ -30,10 +36,13 @@ export const NavContainer = styled.nav`
       }
     }
   }
+
   section:nth-child(2) {
     padding-top: 20px;
     display: flex;
     flex-direction: column;
+
+    gap: 10px;
 
     width: fit-content;
     height: fit-content;
@@ -43,7 +52,7 @@ export const NavContainer = styled.nav`
       align-self: flex-end;
       ul {
         display: flex;
-        flex-direction: row;
+        align-items: center;
         gap: 36.37px;
         li {
           min-width: fit-content;
@@ -54,12 +63,16 @@ export const NavContainer = styled.nav`
 
           color: #ffffff;
         }
+        img {
+          height: 19px;
+        }
       }
     }
+
     div:nth-child(2) {
       ul {
         display: flex;
-        flex-direction: row;
+        align-items: center;
         gap: 32px;
         li {
           min-width: fit-content;
@@ -69,6 +82,11 @@ export const NavContainer = styled.nav`
           text-transform: uppercase;
 
           color: #ffffff;
+        }
+
+        img {
+          width: 30px;
+          height: 30px;
         }
       }
     }

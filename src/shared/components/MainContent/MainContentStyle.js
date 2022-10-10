@@ -30,7 +30,7 @@ export const ContentWrapper = styled.section`
     min-width: fit-content;
     font-style: normal;
     font-weight: 400;
-    font-size: 2.8rem;
+    font-size: 2.2rem;
     line-height: 46px;
     text-transform: uppercase;
 
@@ -184,16 +184,26 @@ export const PBisnis = styled.div`
     color: #5a5a5a;
     margin: 22px 0 43px 0;
   }
+
   .detail {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 40px;
+
+    &__icon {
+      flex: 1;
+    }
+
     &__content {
-      width: 50%;
+      /* width: 50%; */
+      height: 420px;
       text-align: justify;
+      flex: 1;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: space-around;
+      flex-wrap: wrap;
 
       h4:nth-child(1) {
         font-family: 'Poppins';

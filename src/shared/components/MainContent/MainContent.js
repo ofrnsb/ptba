@@ -81,28 +81,30 @@ const MainContent = () => {
         <PBisnis>
           <h3>PENGEMBANGAN BISNIS </h3>
           <p>
-            It is particularly important for us that you as a customer are
-            actively involved in creative processes and that you know at all
-            times which step we are about to take next. Learn more about our
-            workflow and our communication with you as a customer here.
+            Pengembangan bisnis kami terdiri Generik (Tambang & Infrastruktur),
+            pengembangan bisnis pembangkit, hilirisasi batubara dan bisnis
+            pendukung
           </p>
           <div className="detail">
-            <Icon size="520px" background={bisnisLogo} />
+            <Icon
+              className="detail__icon"
+              size="420px"
+              background={bisnisLogo}
+            />
             <div className="detail__content">
               <h4>
-                Batu Bara <Icon size="20px" background={plusIcon} />
+                GENERIK <Icon size="20px" background={plusIcon} />
               </h4>
               <h4>
                 Pembangkit <Icon size="20px" background={minusIcon} />
               </h4>
               <p>
-                Menguatnya harga batu bara dunia di tahun 2021 menjadi faktor
-                utama yang mendorong peningkatan kinerja segmen batu bara. Di
-                tengah kondisi pandemi COVID-19 yang masih terus berlangsung,
-                Perusahaan berupaya untuk mengoptimalkan produksi dengan tetap
-                menerapkan protokol kesehatan yang ketat. Selain itu, curah
-                hujan yang tinggi menjadi tantangan bagi Perusahaan untuk
-                meningkatkan produksi.
+                Pengembangan bisnis pembangkit listrik (Investasi, Engineering,
+                Procurement, Construction (EPC), Operation & Maintenance (O&M))
+                dalam lingkup nasional & regional, serta pengembangan kompetensi
+                perusahaan di bidang kelistrikan, melalui investasi dan kerja
+                sama strategis untuk pengembangan pembangkit & usaha EPC dan
+                O&M.
               </p>
               <button>Selengkapnya</button>
               <p className="benefisiasi">

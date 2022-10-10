@@ -1,9 +1,13 @@
-import { NavContainer } from './navbarStyle';
+import { useScroll } from '../../../controller/Utils/useScrollPosition';
+import medsosIcon from '../../assets/Icon/medsosIcon.png';
 import ptbaIcon from '../../assets/Icon/ptba-logo.svg';
+import searchIcon from '../../assets/Icon/searchIcon.png';
+import { NavContainer } from './navbarStyle';
 
 const Navbar = () => {
+  const { scrollPosition } = useScroll();
   return (
-    <NavContainer>
+    <NavContainer scrollPosition={scrollPosition}>
       <section>
         <div>
           <img src={ptbaIcon} alt="PTBA LOGO" />
@@ -20,8 +24,10 @@ const Navbar = () => {
             <li>LAPORAN</li>
             <li>BERITA</li>
             <li>SDM</li>
+            <img src={medsosIcon} alt="searchIcon" />
           </ul>
         </div>
+
         <div>
           <ul>
             <li>BERANDA</li>
@@ -30,6 +36,7 @@ const Navbar = () => {
             <li>TATA KELOLA •</li>
             <li>ESG •</li>
             <li>HUBUNGAN INVESTOR •</li>
+            <img src={searchIcon} alt="searchIcon" />
           </ul>
         </div>
       </section>

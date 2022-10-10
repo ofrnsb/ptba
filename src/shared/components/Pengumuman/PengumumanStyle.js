@@ -2,9 +2,9 @@ import styled from 'styled-components';
 
 export const ContentWrapper = styled.div`
   box-sizing: border-box;
-  padding-top: 71px;
   margin: 0;
   flex: 1;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -20,6 +20,8 @@ export const ContentWrapper = styled.div`
     overflow-x: hidden;
     overflow-y: scroll;
 
+    transform: scale(0.8);
+
     h1 {
       font-size: 120px;
       text-align: center;
@@ -32,6 +34,10 @@ export const ContentWrapper = styled.div`
     display: flex;
     flex-direction: column;
     gap: 30px;
+
+    float: right;
+
+    transform: scale(0.7);
 
     h3 {
       font-style: normal;

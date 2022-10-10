@@ -1,5 +1,5 @@
 import circleIcon from '../../assets/Icon/circleIcon.png';
-import Earth from '../../assets/Icon/Earth.svg';
+import Earth from '../../assets/Icon/Earth.png';
 import leftArrowIcon from '../../assets/Icon/leftArrowIcon.svg';
 import RightArrow from '../../assets/Icon/rigthArrowIcon.svg';
 import { Icon } from '../Components';
@@ -9,6 +9,7 @@ const Footer = () => {
     <Container>
       <ContentWrapper>
         <Icon size="60px" background={leftArrowIcon} />
+
         <div className="Content">
           <div className="Content__Left">
             <h3>ESG</h3>
@@ -22,7 +23,7 @@ const Footer = () => {
           </div>
 
           <div className="Content__Center">
-            <Icon size="500px" background={Earth} />
+            <img className="Icon" src={Earth} />
           </div>
 
           <div className="Content__Right">
@@ -38,7 +39,8 @@ const Footer = () => {
         </div>
 
         <Icon size="60px" background={RightArrow} />
-        <img src={circleIcon} alt="circleIcon" />
+
+        <img src={circleIcon} alt="circleIcon" className="circleIcon" />
       </ContentWrapper>
     </Container>
   );
